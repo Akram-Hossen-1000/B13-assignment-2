@@ -1,59 +1,82 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #2a0a4f, #120021);
-  color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #2a0a4f, #120021);
+    color: #ffffff;
 }
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
 }
 
 .logo span {
-  color: #ff4ecd;
+    color: #ff4ecd;
 }
 
 .navbar nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ccc;
 }
 
 .btn-primary {
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: none;
-  background: linear-gradient(90deg, #ff4ecd, #8b5cf6);
-  color: white;
-  cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, #ff4ecd, #8b5cf6);
+    color: white;
+    cursor: pointer;
 }
 
 .hero {
-  position: relative;
-  text-align: center;
-  padding: 80px 20px;
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
 }
 
 .wave {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 40px;
-  opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    opacity: 0.4;
 }
 
 .hero-circle {
-  width: 220px;
-  transition: transform 0.4s;
+    width: 220px;
+    transition: transform 0.4s;
 }
 
 .hero-circle:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: auto;
+    color: #ccc;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.stats div {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
 }
